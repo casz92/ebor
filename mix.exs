@@ -11,6 +11,7 @@ defmodule Ebor.MixProject do
       description: "A custom CBOR library with tuples support",
       package: package(),
       start_permanent: Mix.env() == :prod,
+      docs: [main: "readme", extras: ["README.md"]],
       deps: deps()
     ]
   end
@@ -24,7 +25,7 @@ defmodule Ebor.MixProject do
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
-    []
+    [{:ex_doc, "~> 0.31", only: :dev, runtime: false}]
   end
 
   def package do
