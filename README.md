@@ -32,12 +32,6 @@ iex> decoded
 {:ok, {"message", 123, 51.89}, ""}
 ```
 
-## 🏗 Contributing
-Want to improve EBOR? Follow these steps:
-- Fork the repository.
-- Create a feature branch: git checkout -b my-feature.
-- Submit a Pull Request!
-
 ## 📜 License
 This project is released under the MIT license. See LICENSE for details.
 
