@@ -94,6 +94,9 @@ defmodule EBOR do
 
   """
   @spec encode(any()) :: binary()
+  def encode(value) when is_struct(value),
+    do: EBOR.Encoder.encode_into(Map.from_struct(value), <<>>)
+
   def encode(value), do: EBOR.Encoder.encode_into(value, <<>>)
 
   @doc """
